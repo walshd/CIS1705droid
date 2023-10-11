@@ -1,0 +1,236 @@
+/* CSS file for styles layout and positioning */
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+}
+
+
+/* logo */
+#logo { display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 28%;
+    max-width: 400px;
+}
+
+#logo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navigation */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    white-space: nowrap; /* stops the text from wrappin */
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+/* banner */
+
+#banner {
+    margin: 0 49px 0 49px;
+    display: inline-grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: -7em;
+}
+
+#banner h1 {
+    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    z-index: 1;
+    max-width: 72%;
+}
+
+
+#powerdownbot {
+    width: 474px;
+    height: 742px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 1.1em;
+    z-index: 0;
+}
+
+#banner-right {
+    display: grid;
+    /* grid-template-columns: 336px 100px 126px; */
+    /* grid-template-columns: 3fr 1fr 1.5fr; */
+    grid-template-columns: 60% 15% 25%;
+    /* grid-template-rows: 172px 58px 195px 62px 169px; */
+    grid-template-rows: 26% 9% 30% 10% 25%;
+    /* show as subgrid of banner */
+    grid-column-start: 3;
+    margin-right: 150px;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    width: 100%;
+    height: 75vh;
+    z-index: 2; /* added so that the button is clickable */
+}
+
+/* size and position the images of the banner-right */
+#burntout {
+    max-width: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 1;
+}
+
+#depressedbot {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#anxietybot {
+    max-width: 100%;
+    height: 100%; 
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: -1;
+    z-index: 1;
+}
+
+#banner-right div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: -1;
+}
+
+.donateparts {
+    z-index: 2;
+}
+
+#welcome {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    width: 92.5%;
+    grid-gap: 0 40px;
+}
+
+#welcome p:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -10px;
+}
+
+#welcome div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    height: 100%;
+    align-items: end;
+
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%),
+    url('images/overloadedcircuits.jpeg');
+    width: 86%;
+    height: 400px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+#welcome div p:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1; 
+    z-index: 1; 
+    width: 100%;
+}
+
+#welcome > section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1; 
+    grid-row-end: 3;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+#service h2 {
+    clear: both;
+}
+
+/* aside blue banner */
+
+#bluebanner {
+    margin-bottom: 2em;;
+}
+
+
+/* news section */
+
+#news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.2em;
+}
+
+#news h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: self-start;
+}
+
+/* news item 1 */
+
+#news article {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 33px 33px 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+}
+
+#news article:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#news article img {
+    order: 1;
+}
+
+#news article h3, #news article p, #news article a {
+    order: 2;
+    padding: 0px 23px; 
+} 
+
+#news article a {
+    align-self: flex-end;
+}

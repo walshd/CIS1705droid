@@ -1,0 +1,863 @@
+/* CSS file for styles such as colours, fonts and design elements */
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/digital-numbers");
+
+/* colours */
+
+/* Root Variables */
+:root {
+    --ltblue: #1a7ca6;
+    --midblue: #114f6a;
+    --dkblue: #00111f;
+    --black: #000;
+    --white: #fff;
+    --grey: #666;
+    --ltgrey: #d9d9d9;
+    --red: #a61a55;
+    --brightred: #fe036c;
+    --midred: #ba0e37;
+    --green: #1aa663;
+    --dkgreen: #187a4b;
+    --border-radius: 11px;
+    --pillradius: 50px;
+}
+
+/* fonts */
+
+html * {
+    font-size: 16px;
+    color: var(--black);
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dkblue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 18px;
+    color: var(--ltblue);
+    font-weight: bolder;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    font-size: 32px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+/* header logo styles*/
+header a {
+    color: var(--white);
+}
+
+header #logo a:first-of-type {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ltblue);
+}
+
+header #logo #powerdownlogo {
+    width: 23%;
+ /*85px*/
+    margin-right: 24px;
+}
+
+/* header nav styles */
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--ltblue);
+    text-decoration: underline;
+}
+
+.current {
+    color: var(--ltblue);
+    text-decoration: underline;
+}
+
+.pill {
+    display: inline-block;
+    padding: 10px 20px;
+ /* Adjust padding as needed */
+    border-radius: var(
+    --pillradius
+  );
+ /* Rounded corners to create the pill shape */
+    text-decoration: none;
+ /* Remove underline for links */
+    text-align: center;
+ /* Center the text horizontally */
+    transition: background-color 0.3s ease;
+ /* Smooth transition for hover effect */
+}
+
+.help span,
+.donate span {
+    font-size: 18px !important;
+}
+
+.help {
+    background-color: none;
+ /* Background color */
+    border-color: var(--red);
+    border-width: 2px;
+    border-style: solid;
+    color: var(--white);
+ /* Text color */
+}
+
+/* Style for the plus icon */
+.help span {
+    margin-left: 5px;
+ /* Adjust the space between the text and icon */
+    color: var(--red);
+}
+
+.help:hover {
+    border-color: var(--brightred);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px !important;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Style for the plus icon */
+.help:hover span {
+    color: var(--brightred);
+}
+
+.donate {
+    background-color: var(--ltblue);
+ /* Background color */
+    color: #fff;
+ /* Text color */
+}
+
+/* Style for the oilcan icon */
+.donate span {
+    margin-left: 5px;
+ /* Adjust the space between the text and icon */
+    color: var(--white);
+}
+
+.donate:hover {
+    background-color: var(--midblue);
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* design elements */
+
+#banner h1 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 0.8em;
+    letter-spacing: -5.4px;
+    text-transform: uppercase;
+    color: var(--ltblue);
+}
+
+#banner h1 span {
+    font-family: "Digital Numbers", sans-serif;
+    font-size: 84px;
+    letter-spacing: -0.1em;
+ /*-1.92px*/
+    color: var(--ltblue);
+    vertical-align: top;
+}
+
+#banner-right img {
+    border: 3px solid var(--ltblue);
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+#banner-right div p {
+    font-size: 14px;
+    color: var(--white);
+    margin: 2em;
+}
+
+.donateparts {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    font-size: 20px !important;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.donateparts span {
+    font-size: 20px !important;
+    margin-left: 5px;
+ /* Adjust the space between the text and icon */
+    color: var(--white);
+}
+
+.donateparts:hover {
+    background-color: var(--dkgreen);
+    color: var(--white);
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 25px 56px;
+}
+
+main p span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#welcome div p:nth-of-type(1) {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    margin-bottom: 0;
+}
+
+#welcome div p:nth-of-type(1) span {
+    color: var(--white);
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1em;
+    padding: -20px;
+}
+
+#welcome > section p:last-of-type:not(ul li p) {
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#welcome > section ul {
+    list-style-type: none;
+    columns: 2;
+}
+
+#welcome > section ul li {
+    display: inline-block;
+}
+
+#welcome > section ul li p::before {
+    content: "\f058";
+ /*"<i class="fa-solid fa-circle-check"></i>";*/
+    font-family: "Font Awesome\ 5 free";
+    font-style: normal;
+    font-weight: 900;
+    padding: 0 10px 0 0;
+    color: var(--midblue);
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 32px;
+    padding-bottom: 3rem;
+    text-transform: capitalize;
+    color: var(--black);
+    position: relative;
+    margin-top: 1rem;
+}
+
+h2 span {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--midblue);
+    letter-spacing: 0.2rem;
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--ltblue);
+    text-align: left;
+    position: relative;
+    bottom: 100%;
+    width: auto;
+}
+
+h2:before {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--ltblue);
+ /* Add the underline */
+    position: absolute;
+    width: 10rem;
+ /* Make the underline span the width of the parent */
+    bottom: 1.5rem;
+ /* Adjust this value to control the space between text and underline */
+    left: 0%;
+ /* Ensure the underline starts from the left */
+    background-color: var(--ltblue);
+  /* transform: translateX(-50%);  */
+}
+
+#service h2 {
+    text-transform: capitalize;
+}
+
+#services h2,
+#services h2 span {
+    width: 100%;
+    text-align: center;
+}
+
+#services h2:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#services article {
+    width: calc(30% - 10px);
+ /* 3 columns with some margin */
+    padding: 0 1rem;
+    margin-bottom: 20px;
+}
+
+#services article a {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+}
+
+#services article a img {
+    order: 1;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#services article a h3,
+#services article a p {
+    order: 2;
+}
+
+#bluebanner {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    background-color: var(--dkblue);
+    padding: 1rem;
+    justify-content: center;
+    margin-left: -56px;
+    margin-right: -56px;
+}
+
+#bluebanner p {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 10rem;
+    justify-content: center;
+    align-self: center;
+}
+
+#bluebanner p span {
+    font-size: 30px;
+    color: var(--white);
+}
+
+#bluebanner img {
+    max-width: 20%;
+}
+
+#testimonials h2 {
+    margin: 0;
+}
+
+#testimonials ul {
+    display: flex;
+  /* flex-wrap: wrap; */
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+#testimonials ul li {
+    flex-basis: calc(20% - 20px);
+ /* 4 columns with some margin */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background: url(images/speechbubble.png) no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: left;
+    color: var(--white);
+    width: 22%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr 3fr;
+    grid-auto-flow: column;
+    min-height: 310px;
+    border-radius: var(--border-radius);
+}
+
+#testimonials ul li h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: --white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    white-space: nowrap;
+}
+
+#testimonials ul li h3 span {
+    display: inline;
+}
+
+#testimonials ul li img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#testimonials ul li p {
+    font-size: 0.9rem;
+  /* color: var(--white); */
+}
+
+#testimonials ul li span {
+    display: block;
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  /* color: --white; */
+}
+
+#testimonials ul li p,
+#testimonials ul li p span,
+#testimonials ul li h3 span,
+#testimonials ul li h3 {
+    color: var(--white) !important;
+}
+
+#testimonials ul li p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.date {
+    padding-top: 1.8rem;
+}
+
+#testimonials ul li p:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: -1;
+}
+
+#testimonials ul li div {
+    text-align: right;
+    height: 20px;
+}
+
+#testimonials ul li img {
+    margin-left: 0;
+}
+
+.qrcode {
+    display: flex;
+}
+
+.qrcode img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+#news article {
+    background-color: var(--dkblue);
+    padding-bottom: 1em;
+}
+
+#news article:first-of-type {
+    background-color: var(--ltgrey);
+}
+
+#news article h3 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2em;
+}
+
+#news article:first-of-type h3 {
+    color: var(--black);
+}
+
+#news article:nth-child(3) p {
+    color: var(--white);
+}
+
+#news article:first-of-type a {
+    color: var(--ltblue);
+}
+
+#news article:first-of-type a:hover {
+    color: var(--midblue);
+}
+
+#news article a {
+    color: var(--red);
+}
+
+#news article a:hover {
+    color: var(--brightred);
+    text-decoration: none;
+}
+
+main > h3 {
+    background-color: var(--midred);
+    font-size: 2.25em;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 36px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer h1 {
+    text-transform: uppercase;
+}
+
+footer aside {
+    width: 100%;
+    align-self: flex-start;
+}
+
+footer div,
+footer section {
+    flex: 1 1 0;
+    margin: 6px;
+}
+
+footer aside p {
+    font-size: 2em;
+    color: var(--ltblue);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer ul li a,
+footer section p {
+    color: var(--white);
+}
+
+footer ul {
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-left: -2.5em;
+}
+
+footer p:not(footer section p),
+footer p a {
+    width: 100%;
+    align-self: flex-start;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+footer div a,
+footer section a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--ltblue);
+}
+
+/* CSS file for styles layout and positioning */
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+}
+
+/* logo */
+#logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 28%;
+    max-width: 400px;
+}
+
+#logo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navigation */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    white-space: nowrap;
+ /* stops the text from wrappin */
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+/* banner */
+
+#banner {
+    margin: 0 49px 0 49px;
+    display: inline-grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: -7em;
+}
+
+#banner h1 {
+    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    z-index: 1;
+    max-width: 72%;
+}
+
+#powerdownbot {
+    width: 474px;
+    height: 742px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 1.1em;
+    z-index: 0;
+}
+
+#banner-right {
+    display: grid;
+  /* grid-template-columns: 336px 100px 126px; */
+  /* grid-template-columns: 3fr 1fr 1.5fr; */
+    grid-template-columns: 60% 15% 25%;
+  /* grid-template-rows: 172px 58px 195px 62px 169px; */
+    grid-template-rows: 26% 9% 30% 10% 25%;
+  /* show as subgrid of banner */
+    grid-column-start: 3;
+    margin-right: 150px;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    width: 100%;
+    height: 75vh;
+    z-index: 2;
+ /* added so that the button is clickable */
+}
+
+/* size and position the images of the banner-right */
+#burntout {
+    max-width: 100%;
+    min-height: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 1;
+}
+
+#depressedbot {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#anxietybot {
+    max-width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: -1;
+    z-index: 1;
+}
+
+#banner-right div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: -1;
+}
+
+.donateparts {
+    z-index: 2;
+}
+
+#welcome {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    width: 92.5%;
+    grid-gap: 0 40px;
+}
+
+#welcome p:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -10px;
+}
+
+#welcome div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    height: 100%;
+    align-items: end;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("images/overloadedcircuits.jpeg");
+    width: 86%;
+    height: 400px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+#welcome div p:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    z-index: 1;
+    width: 100%;
+}
+
+#welcome > section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+#service h2 {
+    clear: both;
+}
+
+/* aside blue banner */
+
+#bluebanner {
+    margin-bottom: 2em;
+}
+
+/* news section */
+
+#news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.2em;
+}
+
+#news h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: self-start;
+}
+
+/* news item 1 */
+
+#news article {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 33px 33px 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+}
+
+#news article:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#news article img {
+    order: 1;
+}
+
+#news article h3,
+#news article p,
+#news article a {
+    order: 2;
+    padding: 0px 23px;
+}
+
+#news article a {
+    align-self: flex-end;
+}
